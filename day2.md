@@ -13,11 +13,11 @@
          B1-->C1(step1 监听服务器)
          B1-->C2(step2 循环读取消息内容)
          B1-->C3(step3 回复数据)
-         
+        
          A-->B2(客户端)
          B2-->C4(Step1 连接服务器)
          B2-->C5(Step2 发送数据)
-         B3-->C6(Step3 接收数据)
+         B2-->C6(Step3 接收数据)
      ```
      - 代码 udpServer
      - 代码 udpClient

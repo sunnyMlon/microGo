@@ -13,6 +13,7 @@ func main(){
 		fmt.Println("Listen fail, err: %v \n", err)
 		return
 	}
+	
 	//2 建立套接字连接
 	for {
 		conn, err := listener.Accept()
@@ -20,6 +21,7 @@ func main(){
 			fmt.Printf("Accept fail, err: %v\n", err)
 			continue
 		}
+		
 		//创建处理协程
 		go func(conn net.Conn) {
 			for {

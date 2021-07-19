@@ -6,7 +6,7 @@
     - 数据的服务器 tcpServer
  
  + 2.9 Golang如何创建UDP的服务器和客户端？
-     ```
+     ```mermid
          gragh LR
          A(UDP服务器和客户端的代码演示)-->B1(服务端)
          A-->B2(客户端)

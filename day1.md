@@ -87,19 +87,20 @@
 
 2.8 自定义消息格式实现装包与拆包
 
-    ```mermaid 
-        graph LR
-        A(如何获取完整的数据报文)-->B1(定义数据格式msg_header+content_len+content)
-        A-->B2(编码encode)
-        A-->B3(解码decode)
-        A-->B4(tcp_client) 
-        B4-->C1(连接服务器) 
-        B4-->C2(数据编码)
-        A-->B5(tcp_server) 
-        B5-->C3(监听接口) 
-        B5-->C4(接受请求) 
-        B5-->C5(创建独立协程) 
-        B5-->C6(数据解码)
-    ```
+```mermaid 
+    graph LR
+    A(如何获取完整的数据报文) --> B1(定义数据格式msg_header+content_len+content)
+    A --> B2(编码encode)
+    A --> B3(解码decode)
+    A --> B4(tcp_client) 
+    B4 --> C1(连接服务器) 
+    B4 --> C2(数据编码)
+    A --> B5(tcp_server) 
+    B5 --> C3(监听接口) 
+    B5 --> C4(接受请求) 
+    B5 --> C5(创建独立协程) 
+    B5 --> C6(数据解码)
+```
+
     
  

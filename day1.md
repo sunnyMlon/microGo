@@ -12,7 +12,6 @@
 3. 复杂部分，需要以流程图 | UML图 | 思维导图方式，多维展示
     - ![go学习路线思维导图](https://i.loli.net/2021/07/17/YOS4xJUKylajzVd.jpg)
     - [在线传图地址](https://sm.ms/)
-    
  
 ## 1_2021717_microGo学习笔记
 
@@ -88,7 +87,7 @@
 
 2.8 自定义消息格式实现装包与拆包
 
-    ```
+    ```mermaid 
         graph LR
         A(如何获取完整的数据报文)-->B1(定义数据格式msg_header+content_len+content)
         A-->B2(编码encode)
